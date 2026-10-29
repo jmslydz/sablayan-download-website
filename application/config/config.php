@@ -23,7 +23,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = getenv('CI_BASE_URL') ?: 'http://localhost/sablayan-codeigniter3/';
+// Use same-origin URLs by default so CSS, images and the PWA work at any
+// hostname, port or installation folder without a machine-specific setting.
+// An explicit public URL remains available for deployments that need it.
+$script_name = isset($_SERVER['SCRIPT_NAME']) ? $_SERVER['SCRIPT_NAME'] : '/index.php';
+$script_name = str_replace('\\', '/', $script_name);
+$script_name = preg_replace('#/index\.php(?:/.*)?$#', '/index.php', $script_name);
+$base_path = rtrim(str_replace('\\', '/', dirname($script_name)), '/');
+$config['base_url'] = getenv('CI_BASE_URL') ?: (($base_path === '.' ? '' : $base_path) . '/');
 
 /*
 |--------------------------------------------------------------------------

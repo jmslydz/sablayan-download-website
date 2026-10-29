@@ -10,12 +10,11 @@ class Landing extends CI_Controller
         $this->config->load('school', TRUE);
     }
 
-    public function index($open_download = FALSE)
+    public function index()
     {
         $this->output->set_content_type('text/html', 'utf-8');
         $this->load->view('landing/index', array(
             'download_ready' => $this->download_url() !== '',
-            'open_download' => $open_download === TRUE,
         ));
     }
 
@@ -23,8 +22,9 @@ class Landing extends CI_Controller
     {
         $url = $this->download_url();
         if ($url === '') {
-            // A direct link remains useful even before an app URL is available.
-            $this->index(TRUE);
+            // Keep old download links useful without rendering a duplicate page.
+            $this->output->set_status_header(302);
+            $this->output->set_header('Location: ' . base_url() . '#help');
             return;
         }
         redirect($url, 'location', 302);

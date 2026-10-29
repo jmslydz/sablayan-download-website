@@ -99,3 +99,16 @@
  .feature-icon svg{width:21px;height:21px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+[hidden]{display:none!important}
+.offline-notice{margin:0;padding:12px 20px;text-align:center;background:#fff3cb;color:var(--ink);font-size:14px}
+.pwa-steps-title{font-size:18px;margin:0 0 20px}
+.pwa-install-steps{margin:0;padding-left:24px;color:var(--muted)}
+.pwa-install-steps li{padding-left:8px;margin-bottom:20px;line-height:1.75}
+.pwa-install-steps li::marker{font-weight:700;color:var(--green)}
+.pwa-install-steps strong{color:var(--ink)}
+.pwa-guide .pwa-install-tip{margin:28px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.pwa-guide .pwa-install-note{font-size:13px;max-width:340px}
+.pwa-guide #pwa-status:empty{display:none}
+.pwa-guide #pwa-status{color:var(--green)}
+@media(max-width:800px){.pwa-guide .button{min-height:48px}.pwa-guide .pwa-install-tip{font-size:16px}.pwa-guide .pwa-install-note{font-size:14px;max-width:none}}
+@media(min-width:601px) and (max-width:800px){.hero-actions{grid-template-columns:1fr}}

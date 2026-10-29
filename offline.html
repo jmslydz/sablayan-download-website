@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#064c35">
+  <title>You’re offline · Sablayan</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;padding:24px;background:#f5f8f5;color:#163a2d;font:16px/1.65 Arial,Helvetica,sans-serif}main{max-width:480px;padding:32px;background:white;border:1px solid #dce5df;border-radius:18px}h1{line-height:1.2}a{display:inline-block;background:#064c35;color:white;padding:12px 20px;border-radius:7px;text-decoration:none}a:focus-visible{outline:3px solid #c69516;outline-offset:4px}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>You’re offline.</h1>
+    <p>This action needs an internet connection. Reconnect to download the school app, or return to the saved Sablayan page.</p>
+    <a id="home" href="./">Back to the download page</a>
+  </main>
+  <script>
+    // This response may be served at a nested URL such as /index.php/download.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.ready.then(registration => {
+        document.querySelector('#home').href = registration.scope;
+      });
+    }
+  </script>
+</body>
+</html>
