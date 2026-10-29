@@ -42,6 +42,14 @@
 </div></div>
 </section>
 <section class="section" id="features"><div class="container"><div class="section-heading"><div><div class="eyebrow">About the school’s Android app</div><h2>Less searching.<br>More staying in the loop.</h2></div><p>These features belong to the separate school app. Installing this download page does not provide access to them.</p></div><div class="feature-grid"><article class="feature-card"><div class="feature-icon"><svg><use href="#bell"/></svg></div><h3>Alerts & announcements</h3><p>Keep important school notices, reminders, and campus updates within reach.</p></article><article class="feature-card"><div class="feature-icon"><svg><use href="#cap"/></svg></div><h3>Academics & grades</h3><p>Follow academic progress and stay informed about classes and assignments.</p></article><article class="feature-card"><div class="feature-icon"><svg><use href="#shield"/></svg></div><h3>Attendance & conduct</h3><p>Stay aware of attendance records and notices related to your child’s school day.</p></article><article class="feature-card"><div class="feature-icon"><svg><use href="#card"/></svg></div><h3>School transactions</h3><p>Find school-issued transaction updates and related reminders, when applicable.</p></article></div></div></section>
+<section class="section how" id="how-it-works" aria-labelledby="getting-started-title">
+<div class="container how-grid">
+<div class="how-intro"><div class="eyebrow">Getting started</div><h2 id="getting-started-title">Three simple steps.<br>You’re connected.</h2><p>Have your Android phone and school-issued login details ready.</p><a class="text-link" href="#help">Need a hand getting started?</a></div>
+<div class="steps">
+<article class="step"><div class="step-number">01</div><h3>Download the app</h3><p>Open the school’s official download link in the help section when available.</p></article>
+<article class="step"><div class="step-number">02</div><h3>Install on Android</h3><p>Follow the instructions on the official download page to complete installation.</p></article>
+<article class="step"><div class="step-number">03</div><h3>Log in & explore</h3><p>Use the account provided by the school, then check your updates and school information.</p></article>
+</div></div></section>
 <section class="section" id="help"><div class="container faq-grid">
 <div class="faq-intro"><div class="eyebrow">A little help</div><h2>Questions<br>about installing?</h2><p>For help with school accounts, contact your class adviser or the school administrator.</p></div>
 <div class="faq-list">

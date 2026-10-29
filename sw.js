@@ -2,7 +2,7 @@
 
 // Bump this version whenever the offline files change.
 const CACHE_PREFIX = 'sablayan-pwa-' + self.registration.scope + '::';
-const CACHE_NAME = CACHE_PREFIX + 'v9';
+const CACHE_NAME = CACHE_PREFIX + 'v10';
 const urlFor = path => new URL(path, self.registration.scope).href;
 const HOME = urlFor('./');
 const OFFLINE = urlFor('offline.html');

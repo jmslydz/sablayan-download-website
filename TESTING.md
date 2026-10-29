@@ -5,7 +5,9 @@
 - A single installation guide refers to the actual **Install page** button.
   Browser-menu steps are explicitly a fallback and distinguish Chrome's menu
   from the website's mobile navigation.
-- Removed the second Getting started guide, repeated download buttons, bottom
+- Restored the requested Getting started section for the separate Android app,
+  with its download step pointing to the official link in the help section.
+- Removed repeated download buttons, bottom
   promotional prompt, unavailable-download dialog, and repeated footer help link.
 - Navigation targets the remaining sections. The FAQ shows one Android app
   download link only when a valid official HTTPS URL is configured.
